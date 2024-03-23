@@ -16,7 +16,7 @@ return new class extends Migration
             //parametreleri yazmasırası önemli default alabilmesi için
             $table->string('image')->nullable()->default('https://fakeimg.pl/1256x400/?text=Slider');
             $table->string('name')->nullable()->default('Slider Name');
-            $table->text('content')->nullable()->default('Slider Content');
+            $table->text('content')->nullable();
             $table->string('link')->nullable()->default('#');
             $table->enum('status',['0','1'])->default('0');
             $table->enum('position',['text-left','text-right','text-center'])->nullable()->default('text-center');
